@@ -1,0 +1,5 @@
+{
+  "name": "清冰箱料理AI小幫手",
+  "description": "一個使用Gemini API的聊天機器人，可以根據使用者輸入的食材，生成簡易食譜。介面語言為繁體中文。",
+  "requestFramePermissions": []
+}
