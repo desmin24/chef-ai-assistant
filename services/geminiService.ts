@@ -2,9 +2,10 @@
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 
 // Ensure API_KEY is set in the environment variables
-const apiKey = process.env.API_KEY;
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+
 if (!apiKey) {
-  throw new Error("API_KEY environment variable not set.");
+  throw new Error("API 金鑰沒讀到，請檢查 .env.local");
 }
 
 const ai = new GoogleGenAI({ apiKey });
